@@ -89,8 +89,7 @@
       <plugin>
         <groupId>com.spotify</groupId>
         <artifactId>docker-maven-plugin</artifactId>
-        <configuration>
-          <skipDockerBuild>true</skipDockerBuild>
+        <configuration>          
           <useConfigFile>${docker.useConfigFile}</useConfigFile>
         </configuration>
         <executions>
