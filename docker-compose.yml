@@ -17,7 +17,7 @@ services:
 
   api:
     build: api
-    image: hygieia-api
+    image: capitalone.io/hygieia-api:latest
     depends_on:
       - db-setup
     ports:
@@ -25,7 +25,7 @@ services:
 
   api-audit:
     build: api-audit
-    image: hygieia-api-audit
+    image: capitalone.io/hygieia-api-audit:latest
     depends_on:
       - db-setup
     ports:
@@ -33,7 +33,7 @@ services:
 
   ui:
     build: UI
-    image: hygieia-ui
+    image: capitalone.io/hygieia-ui:latest
     depends_on:
       - api
     ports:
@@ -41,127 +41,127 @@ services:
 
   appdynamics-collector:
     build: collectors/performance/appdynamics
-    image: hygieia-appdynamics-collector
+    image: capitalone.io/hygieia-appdynamics-collector:latest
     depends_on:
       - db-setup
 
   artifactory-artifact-collector:
     build: collectors/artifact/artifactory
-    image: hygieia-artifactory-artifact-collector
+    image: capitalone.io/hygieia-artifactory-artifact-collector:latest
     depends_on:
       - db-setup
 
   bamboo-build-collector:
     build: collectors/build/bamboo
-    image: hygieia-bamboo-build-collector
+    image: capitalone.io/hygieia-bamboo-build-collector:latest
     depends_on:
       - db-setup
 
   bitbucket-collector:
     build: collectors/scm/bitbucket
-    image: hygieia-bitbucket-scm-collector
+    image: capitalone.io/hygieia-bitbucket-scm-collector:latest
     depends_on:
       - db-setup
 
   chat-ops-collector:
     build: collectors/misc/chat-ops
-    image: hygieia-chat-ops-collector
+    image: capitalone.io/hygieia-chat-ops-collector:latest
     depends_on:
       - db-setup
 
   hpsm-cmdb-collector:
     build: collectors/cmdb/hpsm
-    image: hygieia-hpsm-cmdb-collector
+    image: capitalone.io/hygieia-hpsm-cmdb-collector:latest
     depends_on:
       - db-setup
 
   github-collector:
     build: collectors/scm/github
-    image: hygieia-github-scm-collector
+    image: capitalone.io/hygieia-github-scm-collector:latest
     depends_on:
       - db-setup
 
   github-graphql-collector:
     build: collectors/scm/github-graphql
-    image: hygieia-github-graphql-scm-collector
+    image: capitalone.io/hygieia-github-graphql-scm-collector:latest
     depends_on:
       - db-setup
 
   gitlab-feature-collector:
     build: collectors/feature/gitlab
-    image: hygieia-gitlab-feature-collector
+    image: capitalone.io/hygieia-gitlab-feature-collector:latest
     depends_on:
       - db-setup
 
   gitlab-scm-collector:
     build: collectors/scm/gitlab
-    image: hygieia-gitlab-scm-collector
+    image: capitalone.io/hygieia-gitlab-scm-collector:latest
     depends_on:
       - db-setup
 
   jenkins-build-collector:
     build: collectors/build/jenkins
-    image: hygieia-jenkins-build-collector
+    image: capitalone.io/hygieia-jenkins-build-collector:latest
     depends_on:
       - db-setup
 
   jenkins-codequality-collector:
     build: collectors/build/jenkins-codequality
-    image: hygieia-jenkins-codequality-collector
+    image: capitalone.io/hygieia-jenkins-codequality-collector:latest
     depends_on:
       - db-setup
 
   jenkins-cucumber-test-collector:
     build: collectors/build/jenkins-cucumber
-    image: hygieia-jenkins-cucumber-test-collector
+    image: capitalone.io/hygieia-jenkins-cucumber-test-collector:latest
     depends_on:
       - db-setup
 
   jira-collector:
     build: collectors/feature/jira
-    image: hygieia-jira-feature-collector
+    image: capitalone.io/hygieia-jira-feature-collector:latest
     depends_on:
       - db-setup
 
   nexus-iq-collector:
     build: collectors/library-policy/nexus-iq-collector
-    image: hygieia-nexus-iq-collector
+    image: capitalone.io/hygieia-nexus-iq-collector:latest
     depends_on:
       - db-setup
 
   sonar-codequality-collector:
     build: collectors/build/sonar
-    image: hygieia-sonar-codequality-collector
+    image: capitalone.io/hygieia-sonar-codequality-collector:latest
     depends_on:
       - db-setup
 
   subversion-collector:
     build: collectors/scm/subversion
-    image: hygieia-subversion-scm-collector
+    image: capitalone.io/hygieia-subversion-scm-collector:latest
     depends_on:
       - db-setup
 
   udeploy-collector:
     build: collectors/deploy/udeploy
-    image: hygieia-udeploy-collector
+    image: capitalone.io/hygieia-udeploy-collector:latest
     depends_on:
       - db-setup
 
   versionone-collector:
     build: collectors/feature/versionone
-    image: hygieia-versionone-collector
+    image: capitalone.io/hygieia-versionone-collector:latest
     depends_on:
       - db-setup
 
   xldeploy-collector:
     build: collectors/deploy/xldeploy
-    image: hygieia-xldeploy-collector
+    image: capitalone.io/hygieia-xldeploy-collector:latest
     depends_on:
       - db-setup
 
   score-collector:
     build: collectors/misc/score
-    image: hygieia-score-collector
+    image: capitalone.io/hygieia-score-collector:latest
     depends_on:
       - db-setup
 
